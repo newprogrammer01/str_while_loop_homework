@@ -10,8 +10,8 @@ def main(s):
     a=0
     b=0
     while a<len(s):
-        if s[a].isalpha() and s[a]!=a and s[a]!=e and s[a]!=i and s[a]!=o and s[a]!=u:
+        if s[a].isalpha():
             b+=1
         a+=1
-    return b
-print(main("CodeschoolUz"))
+    return b-(s.count('a')+s.count('e')+s.count('i')+s.count('o')+s.count('u'))
+print(main("Codeschooluz"))
